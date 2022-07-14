@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	</head>
+	<body>
+      <div class="box">
+        <form id="search-form">
+          <input
+            type="text"
+            aria-describedby="taxtHelp"
+            id="exampleInputtext1"
+            placeholder="Enter city"
+            autofocus="on"
+            autocomplete="off"
+            
+          />
+          <button type="submit" class="btn btn-warning">SEARCH</button>
+          <button type="button" id="current-button" class="btn btn-primary" >Current</button>
+					<div class="container">
+          <div class="row">
+            <span class="col">
+              <a href="">New York</a>
+						</span>
+            <span class="col">
+              <a href="">Paris</a>
+						</span>
+            <span class="col">
+              <a href="">Kyiv</a>
+						</span>
+            <span class="col">
+              <a href="">Sidny</a>
+						</span>
+					</div>
+				</div>
+					<span>
+                <h4>
+                Time, date, day
+              </h4>
+						</span>
+						
+               <span class="coll"id="temperature">25</span>
+              
+              <span class="link">
+                <a href="#" id="link-form">°C</a>
+                <a href="#" id="link-form-input">|°F</a>
+              </span>
+              <span>
+                <h2>Kharkiv</h2>
+							</span>
+            
+					
+				</div>
+				</br>
+				<div class="container">
+					<div class="row">
+            <div class="col-2">
+              <p>
+                Manday,</br>+27°/+14°</br>☀
+							</p>
+            </div>
+            <div class="col-2">
+              <p>
+                Tuesday,</br>+24°/+12°</br>🌥
+							</p>
+						</div>
+						<div class="col-2">
+              <p>
+                Wednsday,</br>+19°/+10°</br>🌦
+							</p>
+						</div>
+						<div class="col-2">
+						<p>
+                Thursday,</br>+26°/+14°</br>🌥
+						</p>
+					</div>
+						<div class="col-2">
+              <p>
+                Friday,</br>+21°/+10°</br>☁️
+							<p>
+						</div>
+					</div>
+				</div>	
+        </form>
+      </div>
+    
+    <script src="index.js"></script>
+  </body>
+</html>

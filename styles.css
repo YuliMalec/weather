@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+}
+body {
+    font-family: sans-serif;
+    width: 550px;
+    height: 350px;
+  }
+  .box {
+    padding: 25px 25px;
+    background-color: rgb(194, 237, 245);
+    margin: 25px 25px;
+    width: 550px;
+    height: 350px;
+  }
+  .link {
+    font-size: 20px;
+    position: relative;
+    left:200px;
+    top:-50px;
+  }
+  
+  h2 {
+  color: rgb(53, 31, 177);
+   position:relative;
+   left: 370px;
+   top:-150px;
+  }
+  .coll {
+    font-size: 80px;
+    color: rgb(53, 31, 177);
+    position: relative;
+    left:200px;
+    top:-50px;
+  }
+  p {
+    color: blueviolet;
+  }
+  p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  h4 {
+    color:blue;
+   list-style-type: none; 
+   position: relative;
+   top:30px;
+  }
+  .col-2 {
+    margin-right: auto;
+    margin-left:auto;
+    position: relative;
+    top: -150px;
+
+    
+  }
+  
