@@ -129,7 +129,7 @@ let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
 
-let temperat = document.querySelector("#link-form-input");
+let temperat = document.querySelector("#search-form");
 temperat.addEventListener("submit",cityIn);
 
 
