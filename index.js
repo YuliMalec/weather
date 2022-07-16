@@ -43,11 +43,16 @@
 
 
 
-function formatDate (date) {
-
+function formatDate (timestamp) {
+let date = new Date (timestamp);
 let hours = date.getHours();
+if (hours < 10) {
+  hours = 0`${hours}`;
+}
 let min= date.getMinutes();
-
+if (min < 10) {
+  min = 0`${min}`;
+}
 
 let days = [
 "Sun",
@@ -85,6 +90,7 @@ return `${hours}:${min},${day} ${month} `;
 function getTemperature (response) {
 document.querySelector("#temperature").innerHTML=Math.round(response.data.main.temp);
 document.querySelector("h2").innerHTML=response.data.name
+document.querySelector("#date").innerHTML=formatDate(response.data.dt * 1000);
 }
 
 
