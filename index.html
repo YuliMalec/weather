@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-	</head>
+	<link rel="stylesheet" href="src\styles.css" />
+</head>
 	<body>
-      <div class="box">
+    <div class="box">
         <form id="search-form">
           <input
             type="text"
@@ -21,78 +22,72 @@
             autocomplete="off"
             
           />
-          <button type="submit" class="btn btn-warning">SEARCH</button>
+          <button type="submit" value="Search"class="btn btn-warning">SEARCH</button>
           <button type="button" id="current-button" class="btn btn-primary" >Current</button>
-					<div class="container">
+			<div class="container">
+          
+        <div class="weather-app">
           <div class="row">
-            <span class="col">
-              <a href="">New York</a>
-						</span>
-            <span class="col">
-              <a href="">Paris</a>
-						</span>
-            <span class="col">
-              <a href="">Kyiv</a>
-						</span>
-            <span class="col">
-              <a href="">Sidny</a>
-						</span>
-					</div>
-				</div>
-					<span>
-                <h4>
-                Time, date, day
-              </h4>
-						</span>
-						
-               <span class="coll"id="temperature">25</span>
+          <div class="col-6">  
+					  <ul class="Date-And-Description">
+              <li class="date" id="date">Date</li>
+              <li class="description" id="description"></li>
+              <li id="cityName" class="city"></li>
+            </ul>
+						</div>
+            
+            
+
+          <div class="col-6">
+              <div class="weather-temperature">
+              <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Cloudly" class="icon" id="icon"/>  
+            
+            <span class="coll"id="temperature">25</span>
               
               <span class="link">
                 <a href="#" id="link-form">°C</a>
                 <a href="#" id="link-form-input">|°F</a>
-              </span>
-              <span>
-                <h2>Kharkiv</h2>
-							</span>
-            
-					
-				</div>
-				</br>
-				<div class="container">
-					<div class="row">
+              </span> 
+            </div>
+          </div>
+          
             <div class="col-2">
               <p>
-                Manday,</br>+27°/+14°</br>☀
+                Mon,</br>+27°/+14°</br><img src="https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png"/>
 							</p>
             </div>
             <div class="col-2">
               <p>
-                Tuesday,</br>+24°/+12°</br>🌥
+                 Tue,</br>+24°/+12°</br><img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"/>
 							</p>
 						</div>
 						<div class="col-2">
               <p>
-                Wednsday,</br>+19°/+10°</br>🌦
+                Wed,</br>+19°/+10°</br><img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"/>
 							</p>
 						</div>
 						<div class="col-2">
 						<p>
-                Thursday,</br>+26°/+14°</br>🌥
+                Thu,</br>+26°/+14°</br><img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"/>
 						</p>
 					</div>
 						<div class="col-2">
               <p>
-                Friday,</br>+21°/+10°</br>☁️
-							<p>
-						</div>
-           <span class="fol"> <a href="https://github.com/YuliMalec/weather">Open source</a> by  Yulia Malets</span>
-					</div>
-				</div>	
-        
+                Fri,</br>+21°/+10°</br><img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"/>
+							</p>
+						</div>   
+					
+           </div> 
+			
+				</div>
+           </div>
+				</div>
+			</div>
+    </div>
         </form>
-      </div>
+    </div>
+    <span class="fol"> <a href="https://github.com/YuliMalec/weather">Open source</a> by  Yulia Malets</span>
     
-    
-    <script src="index.js"></script>
+    <script src="src\index.js"></script>
   </body>
 </html>
