@@ -17,7 +17,7 @@
             type="text"
             aria-describedby="taxtHelp"
             id="exampleInputtext1"
-            placeholder="Enter city"
+            placeholder="Type a city"
             autofocus="on"
             autocomplete="off"
             
@@ -30,9 +30,10 @@
           <div class="row">
           <div class="col-6">  
 					  <ul class="Date-And-Description">
+              <li class="city" id="cityName"></li>
               <li class="date" id="date">Date</li>
               <li class="description" id="description"></li>
-              <li id="cityName" class="city"></li>
+              <li class="windSpeed" >Wind speed:<span class="windSpeed" id="wind-speed"></span>km/h</li>
             </ul>
 						</div>
             
@@ -42,11 +43,11 @@
               <div class="weather-temperature">
               <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Cloudly" class="icon" id="icon"/>  
             
-            <span class="coll"id="temperature">25</span>
+            <span class="coll"id="temperature"></span>
               
               <span class="link">
-                <a href="#" id="link-form">°C</a>
-                <a href="#" id="link-form-input">|°F</a>
+                <a href="#" id="celsius-link" class="active">°C</a>|
+                <a href="#" id="fahrenheit-link">°F</a>
               </span> 
             </div>
           </div>

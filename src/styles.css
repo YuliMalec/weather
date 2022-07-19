@@ -33,7 +33,7 @@ li.city {
 }
 
 p {
-  color: #e96e50;
+  color:#e96e50;
 }
 
 p:hover {
@@ -42,33 +42,40 @@ p:hover {
 }
 
 .date {
-  color: blue;
+  color: #bdbbba;
   list-style-type: none;
   position: relative;
+  text-transform: capitalize;
+}
+.windSpeed {
+  color:#bdbbba;
+  text-transform: capitalize;
 }
 .col-2 {
   margin-right: auto;
   margin-left: auto;
 
   position: relative;
-  top: 30px;
+  top: 25px;
 }
 
 .fol {
   display: inline;
   padding: 25px;
-  margin-top: -150px;
+  margin-top: -130px;
 }
 .Date-And-Description {
   list-style-type: none;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+
 }
 .description {
-  color: #e96e50;
+  color: #bdbbba;
+  text-transform: capitalize;
 }
 .weather-app {
   max-width: 600px;
-  margin: 20px auto;
+  margin: 15px auto;
 }
 .weather-temperature img {
   margin-right: -30px;
