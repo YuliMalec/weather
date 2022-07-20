@@ -18,12 +18,16 @@ body {
   background: white;
   border-radius: 16px;
 }
-/* .link {
-    font-size: 20px;
-    position: relative;
-    left:200px;
-    top:-50px;
-  } */
+.active {
+  color:#000;
+  
+}
+.active:hover {
+ text-decoration: none; 
+ cursor: default;
+ color: #000;
+ 
+}
 ul {
   margin: 0;
   padding: 0;

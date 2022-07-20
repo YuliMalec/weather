@@ -147,9 +147,7 @@ function formatDate (timestamp) {
   let iconElement=document.querySelector("#icon");
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
-  celsiusTemperature = response.data.main.temp;
-
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  
   getForecast(response.data.coord);
   }
   
@@ -178,28 +176,7 @@ function formatDate (timestamp) {
   navigator.geolocation.getCurrentPosition(currentPosition);
    }
   
-  function displayFahrenheitTemperature (event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
-
- }; 
-
-
-
-  function displayCelsiusTemperature (event) {
-  event.preventDefault();
   
-  celsiusLink.classList.add("active");
-fahrenheitLink.classList.remove("active");
-let temperatureElement = document.querySelector("#temperature");
-temperatureElement.innerHTML = Math.round(celsiusTemperature);
-};
-
-  let celsiusTemperature = null;
   
   
   let dateElement = document.querySelector("#date");
@@ -211,15 +188,11 @@ temperatureElement.innerHTML = Math.round(celsiusTemperature);
   temperat.addEventListener("submit",cityIn);
   
   
-   
+ 
   let getPlace = document.querySelector("#current-button");
   getPlace.addEventListener("click", clickOn);
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
   
   searchCity("Kharkiv");
   
